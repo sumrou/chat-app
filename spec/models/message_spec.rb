@@ -14,6 +14,7 @@ RSpec.describe Message, type: :model do
     it 'contentが存在していれば保存できること' do
       @message.image = nil
       expect(@message).to be_valid
+      
     end
     it 'imageが存在していれば保存できること' do
       @message.content = nil
